@@ -1,0 +1,10 @@
+FROM alpine:3.12
+LABEL maintainer="Christian Nieves <c.nieves@marrickdevelopment.com>"
+
+WORKDIR /hasura
+
+RUN apk add --no-cache curl bash libstdc++
+RUN curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
+
+COPY entrypoint.sh /usr/local/bin/
+ENTRYPOINT ["entrypoint.sh"]
