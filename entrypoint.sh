@@ -9,7 +9,7 @@ fi
 
 if [ -n "$HASURA_GRAPHQL_ENV_FILE" ]; then
   if [ ! -f "$HASURA_GRAPHQL_ENV_FILE" ]; then
-    echo "HASURA_GRAPHQL_ENV_FILE specified, but does not exist: `$HASURA_GRAPHQL_ENV_FILE`"
+    echo "HASURA_GRAPHQL_ENV_FILE specified, but does not exist: '$HASURA_GRAPHQL_ENV_FILE'"
     exit
   else
     ENV_FILE="--envfile $HASURA_GRAPHQL_ENV_FILE"
