@@ -8,6 +8,7 @@ docker pull sharescape/hasura-cli-docker
 - `HASURA_GRAPHQL_SERVER_HOST`: Required if a config.yaml is not mounted. The
     Hasura endpoint to pass to the Hasura CLI
 - `HASURA_GRAPHQL_ADMIN_SECRET`: Optional
+- `HASURA_GRAPHQL_ENV_FILE`: .env filename to load ENV vars from (default ".env")
 
 ## Examples
 ### Using a config file
