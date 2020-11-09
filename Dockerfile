@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM frolvlad/alpine-glibc
 LABEL maintainer="Christian Nieves <c.nieves@marrickdevelopment.com>"
 
 WORKDIR /hasura
