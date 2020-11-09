@@ -37,3 +37,6 @@ docker run --rm \
 sharescape/hasura-cli-docker \
 migrate status
 ```
+
+# Docker Hub
+https://hub.docker.com/repository/docker/sharescape/hasura-cli-docker
