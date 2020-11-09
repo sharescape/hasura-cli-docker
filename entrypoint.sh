@@ -22,5 +22,5 @@ if [ ! -f config.yaml ]; then
 fi
 
 cmd="hasura $* $ENDPOINT $SECRET $ENV_FILE"
-echo "Executing `$cmd`"
+echo "Executing '$cmd'"
 sh -c "$cmd"
